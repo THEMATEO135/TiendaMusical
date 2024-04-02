@@ -1,0 +1,44 @@
+
+<ion-content>
+  <div class="principal">
+
+    <br>
+
+    <ion-card-content id="card">
+
+      <img class="logo" src= "../../../assets/logo.png" alt = "logo" >
+      
+      <ion-input  class="txt"
+      type="text"
+      [(ngModel)]="user"
+      name="usuario"
+      placeholder="Usuario">
+      </ion-input>
+
+      <ion-input  class="txt" type="password"
+      [(ngModel)]="pass"
+      name="password"
+      placeholder="Contraseña">
+      </ion-input>
+
+      <br>
+      <br>
+
+      <ion-button color="dark"  id="btn" shape="round" (click)= logeoCliente($event)>Iniciar</ion-button>
+      
+      <br>
+      <br>
+      <a href="./registro" >
+        Registrar
+      </a>
+    
+    </ion-card-content>
+    
+
+    
+
+
+
+  </div>
+
+</ion-content>

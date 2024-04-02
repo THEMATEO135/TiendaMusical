@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="principal">
+    <br>
+
+    <ion-card-content id="card">
+      <ion-input class="txt"
+                 type="text"
+                 [(ngModel)]="cedula"
+                 name="cedula"
+                 placeholder="Cédula">
+      </ion-input>
+      
+      <ion-input class="txt"
+                 type="text"
+                 [(ngModel)]="nombre"
+                 name="nombre"
+                 placeholder="Nombre">
+      </ion-input>
+      
+      <ion-input class="txt"
+                 type="text"
+                 [(ngModel)]="apellido"
+                 name="apellido"
+                 placeholder="Apellido">
+      </ion-input>
+      
+      <ion-input class="txt"
+                 type="text"
+                 [(ngModel)]="email"
+                 name="email"
+                 placeholder="Email">
+      </ion-input>
+      
+      <ion-input class="txt"
+                 type="text"
+                 [(ngModel)]="telefono"
+                 name="telefono"
+                 placeholder="Teléfono">
+      </ion-input>
+      
+      <ion-input class="txt"
+                 type="text"
+                 [(ngModel)]="user"
+                 name="usuario"
+                 placeholder="Usuario">
+      </ion-input>
+      
+      <ion-input class="txt"
+                 type="password"
+                 [(ngModel)]="pass"
+                 name="password"
+                 placeholder="Contraseña">
+      </ion-input>
+    </ion-card-content> 
+
+    <div class="divbtn">
+      <ion-button color="dark"  id="boton" shape="round" (click)="crearCliente()">Registrar</ion-button>
+      <ion-button color="dark"  id="boton" shape="round" routerLink="/login">Cancelar</ion-button>
+    </div>
+
+  </div>
+</ion-content>
